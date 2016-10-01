@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project basedir=".." default="all" name="bwp" >
+
+  <target description="Initialize properties" name="init" depends="project_init">
+    <property name="javac.debug" value="on" />
+    <property name="javac.optimize" value="off" />
+    <property name="javac.deprecation" value="off" />
+    <property name="build-by" value="WebOnSwing v1.0.1 beta, Copyright © Fernando Damian Petrola (2003-2004)" />
+  </target>
+
+  <target name="clean" description="Cleans all build directories" depends="init" >
+    <delete dir="build/${project.directory}/bin"/>
+  </target>
+
+  <target name="prepare" description="Prepare build directories" depends="init">
+    <mkdir dir="build/${project.directory}/bin"/>
+    <mkdir dir="build/jars"/>
+    <mkdir dir="build"/>
+  </target>
+
+  <target name="compile-wos-project" description="Compile wos project" depends="prepare">
+    <path id="compile.classpath">
+      <pathelement location="build/${project.directory}/bin" />
+      <fileset dir="lib">
+        <include name="**/*.jar"/>
+      </fileset>
+      <fileset dir="${project.directory}/lib">
+        <include name="**/*.jar"/>
+      </fileset>
+      <fileset dir="build/jars">
+        <include name="${wosproject.name}.jar"/>
+      </fileset>
+    </path>
+    <copy todir="build/${project.directory}/bin">
+      <fileset dir="${project.directory}/src">
+        <include name="**" />
+        <exclude name="**/*.java" />
+      </fileset>
+    </copy>
+    <javac srcdir="${project.directory}/src" destdir="build/${project.directory}/bin" debug="true">
+      <classpath refid="compile.classpath"/>
+      <exclude name="examples/swt/**" />
+    </javac>
+  </target>
+  
+  <target name="create-jar" depends="compile-wos-project">
+    <jar basedir="build/${project.directory}/bin" jarfile="build/jars/${project.name}.jar">
+      <include name="**" />
+      <manifest>
+        <attribute name="Built-By" value="${build-by}"/>
+      </manifest>
+    </jar>
+  </target>
+  
+</project>

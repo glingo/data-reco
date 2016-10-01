@@ -1,0 +1,17 @@
+{
+	"presentation" : "javascript",
+	
+	"ordre" : 1,
+	
+	"titre" : "Un petit exemple",
+	
+	"section" : 
+		{
+			"text" :	"Ceci est le corps de la section",
+			"pre"  :  	[
+							"canvasContext.<b>beginPath</b>();",
+							"canvasContext.<b>beginPath</b>();"
+						],
+			"p"	: "Ceci est un paragraphe"
+		}
+}

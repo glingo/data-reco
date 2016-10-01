@@ -1,0 +1,430 @@
+.bluebutton {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color : #000000;
+	font-size: 8pt;
+	border-style: solid;
+	border-color: #000000;
+	border-width: 1px;
+	background-color: #D1DCEB;
+	font-weight: 800;
+	}
+	
+	.body {
+		background-color:#069;
+		color:white;
+		margin:0px;
+		padding:0px;
+		font-size: 12pt;
+		font-family: Verdana, sans-serif;
+	}
+
+	.link {
+		color:#cc0;
+		font-size: 12pt;
+		font-family: Verdana, sans-serif;
+		font-weight: bold;
+	}
+
+	a:visited {
+		color:#cc9;
+	}
+
+	a:active {
+		color:#ffc;
+	}
+
+	a:hover  {
+		color: white;
+	}
+
+	.menu  {
+		font-size: 12px;
+		font-weight: bold;
+		color: #cc0;
+		text-decoration: none;
+	}
+
+	a.menu, a.menu:visited  {
+		text-decoration: none;
+		color: #cc0;
+	}
+	
+	a.menu:hover {
+		color:white;
+	}
+
+	h2, .monthday  {
+		font-size: 20pt;
+		font-family: Georgia, "Times New Roman", serif;
+		font-weight: normal;
+		margin-left: 0px;
+		margin-right: 20px;
+		margin-top: 16px;
+		margin-bottom: 6px;
+		color:white;
+	}
+
+	h1  {
+		font-size: 28pt;
+		font-family: Georgia, "Times New Roman", serif;
+		font-weight: normal;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 16px;
+		margin-bottom: 0px;
+	}
+
+	.welcome  {
+		font-size: 10pt;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	
+	.tinydatetime {
+		font-size: 10px; 
+		font-family: verdana, sans-serif; 
+		font-weight: bold; 
+		color: black;
+		padding-left:5px;
+		padding-right:5px;
+	}
+
+	.copy  {
+		line-height: 130%;
+		margin-left: 50px;
+		margin-right: 50px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+
+	.accentcopy  {
+	}
+
+	p  {
+		line-height: 130%;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+
+	blockquote  {
+		line-height: 130%;
+		margin-left: 50px;
+		margin-right: 50px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+
+	.smallcopy  {
+		font-size: 10pt;
+		font-family: Verdana, sans-serif;
+		color: #ccc;
+		margin-right: 20px;
+	}
+
+	.whitesmallcopy  {
+		font-size: 10pt;
+	}
+
+	a  {
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.comments  {
+		line-height: 130%;
+		margin-left: 70px;
+		margin-right: 70px;
+	}
+
+	.trackback {
+		text-align:left; 
+		width:400px; 
+		background:#004D73; 
+		padding:6px; 
+		border:1px solid white;
+		font-size:11px;
+		line-height: 130%;
+		margin-left: 70px;
+		margin-right: 70px;
+	}
+	
+	.reason {
+		text-align:left; 
+		background:#004D73; 
+		padding:4px; 
+		border:1px solid white;
+		font-size:11px;
+		line-height: 130%;
+		margin-left: 70px;
+		margin-right: 70px;
+		margin-top:20px;
+		margin-bottom:20px;
+		display:inline;
+	}
+	
+	input.radio  {
+		background: #069;
+	}
+
+	input.checkbox  {
+		background: #069;
+	}
+
+	input {
+		font-size: 12px;
+		font-family: Verdana, Arial, sans-serif;
+		color: Black;
+		background-color: Silver;
+	}
+
+	textarea {
+		font-size: 12px;
+		font-family: Verdana, Arial, sans-serif;
+		color: Black;
+		background-color: Silver;
+	}
+
+	.button {
+		background: #cc0;
+		color: Black;
+	}
+
+	select, option  {
+		font-size: 12px;
+		background: silver;
+		color: Black;
+	}
+
+	a.new, a.new:link, a.new:visited, a.new:active {
+		color:white;
+	}
+
+	a:hover.new {
+		text-decoration:underline;
+	}
+
+	label {
+		cursor: pointer;
+		cursor: hand;
+	}
+
+/* stuff for keyboard shortcut widgets */	
+	
+	.formright {
+		width:400px;
+		font-family:verdana, sans-serif;
+		font-size:11px;
+		color:white;
+		height:18px;
+		margin-top:-1px;
+		margin-left:320px;
+	}
+
+	.buttons {
+			background: #ccc;
+			border: 1px solid #ccc;
+			margin: 1;
+			float:left;
+		}
+		
+		.raise	{
+			border-top: 1px solid buttonhighlight;
+			border-left: 1px solid buttonhighlight;
+			border-bottom: 1px solid buttonshadow;
+			border-right: 1px solid buttonshadow;
+			background: #ccc;
+			margin:1;
+			float:left;
+		}
+		
+		.press {
+			border-top: 1px solid buttonshadow;
+			border-left: 1px solid buttonshadow;
+			border-bottom: 1px solid buttonhighlight;
+			border-right: 1px solid buttonhighlight;
+			background: #ccc;
+			margin:1;
+			float:left;
+		}	
+		
+		#toolbar {
+			margin: 0;
+			width: 78px;
+			padding: 0;
+			height:20px;
+			background: #ccc;
+			border-top: 1px solid buttonhighlight;
+			border-left: 1px solid buttonhighlight;
+			border-bottom: 1px solid buttonshadow;
+			border-right: 1px solid buttonshadow;
+			text-align:left;
+		}
+	
+	/* home page only css */
+	
+		#page {
+	}
+
+		#page #menu {
+		width:164px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:0px;
+		float:right;
+		}
+
+		#page #googlead {
+		width:120px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:0px;
+		float:right;
+		}
+
+	
+p.sidebartext {padding-top:0px;padding-left:5px; padding-right:5px;font-size:11px; margin-top:2px;}
+
+.side {margin-right:0px;}
+
+.sidebar {background: #004D73; border-top: 1px solid #fff; border-bottom: 1px solid #fff;}
+
+.adlink {padding:5px;font-size:16px;}
+
+#menufooter  {
+		margin-bottom:0px;
+		}
+		
+#textad {
+	margin:0px;
+	margin-top:5px;
+	}
+		
+#textad2 {
+	margin:0px;
+	margin-top:5px;
+	margin-bottom:15px;
+	}
+				
+#menuad {
+		margin-top:0px;
+		margin-bottom:0px;
+		}
+	
+.ad {
+	background: #0088CC; 
+	border-left: 1px solid #fff; 
+	border-top: 1px solid #fff; 
+	border-bottom: 1px solid #fff;
+	font-size:11px; font-family:verdana, sans-serif; color:white; padding:5px;
+	overflow: hidden;
+	}
+
+div.ad a {
+	font-size:16px;
+	color:#CC0;
+	}
+	
+div.ad a:hover {
+	color:#ffc;
+	}	
+	
+.bringitbacknow {background-color:#004D73; padding 0px; border: 0.1px solid #004D73; width:10px; right:0px; margin:0px; float:right;border-top: 1px solid white; border-bottom: 1px solid white;}
+
+
+div.nicetitle {
+    position: absolute;
+    padding: 4px;
+    top: 0px;
+    left: 0px;
+    color: white;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    width: 25em;
+	font-weight: normal;
+    background-color: #004D73;
+    font-size: 11px;
+	    
+    /* IE proprietary */
+    /*filter:alpha(opacity=90);*/
+    
+    /* Mozilla proprietary */
+    /*-moz-opacity:0.90;*/
+    -moz-border-radius: 12px;
+}
+div.nicetitle p {
+    margin: 0; padding: 0 3px;
+}
+
+p.destination {
+    font-size: 9px;
+    text-align: left;
+    padding-top: 3px;
+	font-weight:normal;
+	color:#aaa;
+}
+
+p.titletext {
+	font-size:11px;
+}
+
+.googleads {
+	float:right;
+	margin-left:20px;
+	margin-bottom:20px;
+}
+
+        .copy  {
+
+        font-size: 12pt;
+
+        font-family: Verdana, sans-serif;
+
+        }
+
+        .accentcopy  {
+
+        font-size: 12pt;
+
+        font-family: Verdana, sans-serif;
+
+        }
+
+        p  {
+
+        font-size: 12pt;
+
+        font-family: Verdana, sans-serif;
+
+        }
+
+        blockquote  {
+
+        font-size: 12pt;
+
+        font-family: Verdana, sans-serif;
+
+        }
+
+        .smallcopy  {
+
+        font-size: 10pt;
+
+        font-family: Verdana, sans-serif;
+
+        }
+
+        a  {
+
+        text-decoration: none;
+
+        }
+
+
+        .comments  {
+
+        font-size: 12pt;
+
+        font-family: Verdana, sans-serif;
+
+        }

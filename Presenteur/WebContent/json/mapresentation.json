@@ -1,0 +1,7 @@
+{
+	"nom" : "Presentation JavaScript",
+	
+	"folder" : "json/presentations/javascript/",
+	
+	"diapositives" : ["JS_1.json","JS_2.json","JS_3.json","JS_4.json","JS_5.json","JS_6.json"]
+}

@@ -1,0 +1,15 @@
+<page-manager>
+  
+	<default-window-place>page</default-window-place>
+	<default-page-class>net.ar.webonswing.pages.SaveContextDefaultHtmlPage</default-page-class>
+
+  <pages>
+    <web-page>
+      <page-class>net.ar.webonswing.pages.ExternalHtmlPage</page-class>
+      <web-path>/WosExamples/WebPage</web-path>
+      <window-class>net.ar.webonswing.swing.components.WebPage</window-class>
+      <window-place>page</window-place>
+    </web-page>
+  </pages>
+</page-manager>
+

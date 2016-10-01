@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routing prefix="exemple">
+	<route name="exemple.test" path="/test" controller="com.glingo.marvin.bundles.exemple.controller.DefaultController" action="test" />
+</routing>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+
+<project basedir=".." default="build-wos-war" name="bww" >
+
+  <target name="prepare-war" description="Prepare build directories" depends="project_init">
+    <mkdir dir="build/wars"/>
+    <mkdir dir="build"/>
+  </target>
+
+  <target name="build-wos-war" depends="prepare-war">
+    <war destfile="build/wars/${war.name}.war" webxml="${project.directory}/extra/web.xml">
+      <fileset dir="${project.directory}/extra">
+        <include name="**"/>
+      </fileset>
+      <lib dir="lib">
+        <include name="*.jar"/>
+        <exclude name="javax.servlet.jar" />
+      </lib>
+      <lib dir="build/jars">
+        <include name="${wosproject.name}.jar"/>
+      </lib>
+      <lib dir="${project.directory}/lib"/>
+      
+			<classes dir="build/${project.directory}/bin">
+			 	<include name="**" if="include.classes"/>
+			</classes>
+			
+      <classes dir="${project.directory}/config"/>
+      <manifest>
+        <attribute name="Built-By" value="${build-by}"/>
+      </manifest>
+    </war>
+  </target>
+	
+	<target name="build-war-deep" depends="create-jar,build-wos-war" /> 
+
+</project>

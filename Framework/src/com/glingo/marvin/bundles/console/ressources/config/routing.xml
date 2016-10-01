@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routing prefix="console">
+	<route name="console.test" path="/test" controller="com.glingo.marvin.bundles.console.controller.ConsoleController" action="test" />
+</routing>

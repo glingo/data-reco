@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/util/StringUtils.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/util/serialize/Loadable.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/routing/RouteCollection.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/test/app/config/parameters.xml</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/builder/Builder.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/util/introspection/AnnotationUtils.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/util/properties/strategy/LoaderStrategy.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/kernel/Kernel.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/routing/loader/AnnotationLoader.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/test/MyTest.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/util/serialize/strategy/XMLLoadStrategy.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/routing/loader/RouteLoader.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/util/properties/PropertieLoader.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/resource/locator/FileLocator.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/util/serialize/strategy/PropertieLoadStrategy.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/kernel/controller/Controller.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/test/app/bundles/test/controller/TestControleur.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/routing/loader/XmlFileLoader.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/util/properties/IPropertieLoader.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/dependency/loader/ContainerXmlFileLoader.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/util/classloader/iterator/AggregateIterator.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/util/serialize/strategy/LoadStrategy.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/kernel/controller/ControllerResolver.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/util/introspection/exceptions/IntrospectionException.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/test/app/bundles/test/TestBundle.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/util/properties/strategy/PropertieLoaderStrategy.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/util/properties/strategy/XMLLoaderStrategy.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/util/ArrayUtils.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/util/serialize/strategy/ILoadStrategy.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/dependency/Definition.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/test/app/AppKernel.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/console/Console.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/test/Run.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/routing/loader/RoutingXmlFileLoader.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/dependency/ContainerBuilder.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/test/app/config/config.xml</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/loader/XmlFileLoader.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/loader/FileLoader.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/routing/RouteBuilder.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/util/classloader/ClassLoaderUtil.java</file>
+            <file>file:/G:/Fichiers/workspace/java/config_component/src/com/marvin/component/util/XPathUtils.java</file>
+        </group>
+    </open-files>
+</project-private>

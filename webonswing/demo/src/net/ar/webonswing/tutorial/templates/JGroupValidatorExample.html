@@ -1,0 +1,82 @@
+<html>
+<head>
+</head>
+
+<body>
+<span name="main">
+<h4><font face="Verdana">JGroupValidator Sample</font></h4>
+<p>
+<table>
+    <tr>
+      <td>
+			<table bgcolor="#C4D8C4" cellpadding=10 style="border: 1px solid #B78BB7">
+			<tr valign="top">
+				<td colspan=3>
+					<font color="Red"><span name="label1"/></font>
+					<br>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=3>
+				<font face=Verdana size=2><b>Credit Card Information</b></font>
+				</td>
+			</tr>
+			<tr>
+				<td align=right>
+					<font face=Verdana size=2>Card Type:</font>
+				</td>
+				<td>
+				  <font face=Verdana size=2>
+					<input name="card1" type="radio" />
+					<span name="card2"/>
+					</font>
+				</td>
+				<td align=middle rowspan=1>
+			<font color="Red"><span name="cardsValidator"/></font>
+		</td>
+			</tr>
+			<tr>
+				<td align=right>
+					<font face=Verdana size=2>Card Number:</font>
+	
+				</td>
+				<td>
+					<input type="text" name="number" />
+				</td>
+				<td>
+					<font color="Red"><span name="numberValidator"/></font>
+				</td>
+	
+			</tr>
+			<tr>
+				<td align=right>
+					<font face=Verdana size=2>Expiration Date:</font>
+				</td>
+				<td>
+					<span name="expirationCombo" />
+				</td>
+				<td>
+					<font color="Red"><span name="expirationValidator"/></font>
+				</td>
+				<td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input name="button" value="Validate" />
+				</td>
+				<td></td>
+			</tr>
+			</table>
+  	 </td>
+        <td valign=top>
+            <table cellpadding=20><tr><td>
+            <font face="verdana" color="Red" size="3"><span name="groupValidator" /></font>
+            </td></tr></table>
+        </td>
+    </tr>
+</table>
+
+</span>
+</body>
+</html>

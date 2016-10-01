@@ -1,0 +1,22 @@
+<project basedir=".." default="build-petstore" >
+
+  <target description="Initialize environment" name="init-petstore">
+    <property name="project.directory" value="petstore"/>
+    <property name="project.name" value="PetStoreDemo"/>
+    <property name="wosproject.name" value="WebOnSwing"/>
+    <property name="war.name" value="WebOnSwingPetStore"/>
+    <property name="include.classes" value=""/>
+  </target>
+
+  <import file="../build-wos-jars.xml" />
+  <import file="../build-wos-project.xml" />
+  <import file="../build-wos-war.xml" />
+  
+	<target name="create-petstore" depends="init-petstore,build-war-deep" />
+	
+	<target name="build-petstore" >
+		<antcall target="build-wos-jars" />
+		<antcall target="create-petstore" />
+	</target>
+	
+</project>

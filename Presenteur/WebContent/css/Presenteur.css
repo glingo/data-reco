@@ -1,0 +1,361 @@
+@CHARSET "UTF-8";
+
+body {
+	
+  font: 16px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px; top: 0px;
+  
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  background-image: -moz-radial-gradient(50% 30% 90deg, circle, #b1dfff 0%, #0c54ab 600px);
+  background-image: -webkit-gradient(radial, 50% 50%, 200, 50% 50%, 600, from(#b1dfff), to(#0c54ab));
+  background-color: #2eabff;
+  background-attachment: fixed;
+  
+  -webkit-font-smoothing: antialiased;
+}
+
+.presentation {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	display: block;
+	overflow: hidden;
+	background: #778;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#01386b));
+	background: -moz-linear-gradient(top, #fff, #01386b);
+}
+
+section#main{
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  
+  position: absolute;
+
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+section.before {
+  display: block;
+  z-index:10;
+  transform: translate(-1020px);
+  -o-transform: translate(-1020px);
+  -moz-transform: translate(-1020px);
+  -webkit-transform: translate3d(-1020px, 0, 0);
+}
+section.current {
+  display: block;
+  z-index:11;
+  transform: translate(0);
+  -o-transform: translate(0);
+  -moz-transform: translate(0);
+  -webkit-transform: translate3d(0, 0, 0);
+}
+section.future {
+  display: block;
+  z-index:10;
+  transform: translate(1020px);
+  -o-transform: translate(1020px);
+  -moz-transform: translate(1020px);
+  -webkit-transform: translate3d(1020px, 0, 0);
+}
+section.diapo.pool{
+	display : none;
+}
+
+.diapo {
+  display: block;
+
+  position: absolute;
+
+  width: 900px;
+  height: 700px;
+
+  left: 50%;
+  top: 50%;
+
+  margin-left: -450px;
+  margin-top: -350px;
+  
+  padding: 40px 60px;
+
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  border-radius: 10px;
+  -o-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+
+  background-color: white;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+  border: 1px solid rgba(0, 0, 0, .3);
+
+  transition:  .3s ease-out;
+  -o-transition:  .3s ease-out;
+  -moz-transition:  .3s ease-out;
+  -webkit-transition:  .3s ease-out;
+}
+
+/**
+		Contenu.
+**/
+.diapo header {
+  font-family: 'Droid Sans';
+  font-weight: normal;
+  letter-spacing: -.05em;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
+  left: 30px;
+  top: 25px;
+  margin: 0;
+  padding: 0;
+  font-size: 140%;
+}
+
+.diapo h1 {
+  font-size: 140%;
+  display: inline;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.diapo h2 {
+  font-family: 'Droid Sans';
+  color: black;
+  font-size: 120%;
+  padding: 0;
+  margin: 20px 0;
+}
+      
+.diapo h2:first-child {
+  margin-top: 0;
+}
+.diapo section,.diapo footer {
+  font-family: 'Droid Sans';
+  color: #3f3f3f;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
+  margin: 100px 30px 0;
+  display: block;
+  overflow: hidden;
+}
+
+.diapo footer {
+  font-size: 100%;
+  margin: 20px 0 0 30px;
+}
+
+.diapo a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 110%;
+  border-bottom: 2px solid #3f3f3f;
+}
+
+.diapo ul {
+  margin: 0;
+  padding: 0;
+}
+
+.diapo button {
+  font-size: 100%;
+}
+
+.diapo pre button {
+  margin: 2px;
+}
+
+.diapo section.left {
+  float: left;
+  width: 390px;
+}
+
+.diapo section.small {
+  font-size: 24px;
+}
+
+.diapo section.small ul {
+  margin: 0 0 0 15px;
+  padding: 0;
+}
+
+.diapo section.small li {
+  padding-bottom: 0;
+}
+      
+.diapo section.middle {
+  line-height: 2em;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  height: 700px;
+  width: 900px;
+}
+
+.diapo pre {
+  text-align: left;
+  font-family: 'Droid Sans Mono', Courier;
+  font-size: 80%;
+  padding: 10px 20px;
+  background: rgba(255, 0, 0, 0.05);
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+.diapo pre select {
+  font-family: Monaco, Courier;
+  border: 1px solid #c61800;
+}
+  
+.diapo input {
+  font-size: 100%;
+  margin-right: 10px;
+  font-family: Helvetica;
+  padding: 3px;
+}
+.diapo input[type="range"] {
+  width: 100%;
+}
+
+.diapo button {
+  margin: 20px 10px 0 0;
+  font-family: Verdana;
+}
+
+.diapo button.large {
+  font-size: 32px;
+}
+  
+.diapo pre b {
+  font-weight: normal;
+  color: #c61800;
+  text-shadow: #c61800 0 0 1px;
+  /*letter-spacing: -1px;*/
+}
+.diapo pre em {
+  font-weight: normal;
+  font-style: normal;
+  color: #18a600;
+  text-shadow: #18a600 0 0 1px;
+}
+.diapo pre input[type="range"] {
+  height: 6px;
+  cursor: pointer;
+  width: auto;
+}
+
+.diapo div.example {
+  display: block;
+  padding: 10px 20px;
+  color: black;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.diapo video {
+  -moz-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.diapo .key {
+  font-family: 'Droid Sans';
+  color: black;
+  display: inline-block;
+  padding: 6px 10px 3px 10px;
+  font-size: 100%;
+  line-height: 30px;
+  text-shadow: none;
+  letter-spacing: 0;
+  bottom: 10px;
+  position: relative;
+  -moz-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+  -o-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+}
+
+.diapo .key { font-family: Arial; }
+
+.diapo :not(header) > .key {
+  margin: 0 5px;
+  bottom: 4px;
+}
+
+.diapo .two-column {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+
+.diapo .stroke {
+  -webkit-text-stroke-color: red;
+  -webkit-text-stroke-width: 1px;
+} /* currently webkit-only */
+
+.diapo .center {
+  text-align: center;
+}
+
+.diapo #presentation-counter {
+  color: #ccc;
+  font-size: 70%;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.diapo div:not(.current).reduced {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+} 
+
+.diapo .no-transitions {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.diapo .no-gradients {
+  background: none;
+  background-color: #fff;
+}
+
+.diapo ul.bulleted {
+  padding-left: 30px;
+}

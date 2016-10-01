@@ -1,0 +1,2 @@
+<h1> Bienvenue dans le bundle d'administration </h1>
+<h2> Depuis un template {{ name }}</h2>

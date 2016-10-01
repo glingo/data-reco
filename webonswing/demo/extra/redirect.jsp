@@ -1,0 +1,1 @@
+<%response.sendRedirect("/WebOnSwingDemo/examples/inspector/PageInspector.page");%>

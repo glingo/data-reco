@@ -1,0 +1,17 @@
+{
+	"presentation" : "javascript",
+	
+	"ordre" : 2,
+	
+	"titre" : "les differents types de titres :",
+	
+	"section" : 
+		{
+			"h1" : "Mon premier titre h1",
+			"h2" : "Mon deuxieme titre h2",
+			"h3" : "Mon troisieme titre h3",
+			"h4" : "Mon quatrieme titre h4",
+			"h5" : "Mon cinquieme titre h5",
+			"h6" : "Mon sixieme titre h6"
+		}
+}

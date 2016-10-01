@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routing>
+	<route controleur="com.glingo.bundles.menu.controller.MenuController" name="menu.afficher" path="menu/afficher" action="afficher"/>
+	<route controleur="com.glingo.bundles.menu.controller.MenuController" name="menu.test" path="menu/test" action="test"/>
+</routing>

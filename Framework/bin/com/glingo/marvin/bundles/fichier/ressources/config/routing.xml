@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routing>	
+	<route name="fichier.css" path=".*[\\.]css$" controller="com.glingo.marvin.bundles.fichier.controller.FichierController" action="cssAction" />
+	<route name="fichier.js" path=".*[\\.]js$" controller="com.glingo.marvin.bundles.fichier.controller.FichierController" action="jsAction" />
+	<route name="fichier.csv" path=".*[\\.]csv$" controller="com.glingo.marvin.bundles.fichier.controller.FichierController" action="csvAction" />
+	<route name="fichier.pdf" path=".*[\\.]pdf$" controller="com.glingo.marvin.bundles.fichier.controller.FichierController" action="pdfAction" />
+</routing>

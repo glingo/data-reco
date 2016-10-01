@@ -1,0 +1,187 @@
+<span name="theDemo">
+	<table border="3" cellpadding="3" cellspacing="3">
+		<tr>
+			<td colspan="2">
+				<table border="0">
+					<span name="theTree"/>
+				</table>
+			</td>
+		</tr>   
+		<tr>
+			<td>
+				<span name="theTextField" size="20"/>
+			</td>
+			<td>
+				<span name="theButton"/>
+			</td>
+		</tr>   
+	</table>
+</span>
+	
+<span name="JTree">
+	<div style="padding-left:0px;width:700">
+		<table border="0" cellpadding="0" cellspacing="0" width="600">
+			<tr>
+				<td>
+					<div name="theRootNode" style="border:0px outset;">
+						<input type="hidden" name="theTreeState"/> 
+						<input type="hidden" name="theTreeExpandState"/> 
+						<input type="hidden" name="theLastRowClicked"/> 
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td>
+									<div name="theTreeCell">
+										<span name="theContent">
+											<table border="0" cellpadding="0" cellspacing="0" align="left">
+												<tr>
+													<td name="theCheck">
+													</td>
+												<span name="theLabel">
+													<td width="20" align="left">
+														<img src="/WebOnSwingDemo/resources/images/tree/folder.gif" >
+													</td>
+													<td>
+														<span name="theLabel" style="font:menu;font-size:12px;">Root Node</span>
+													</td>
+												</span>
+												</tr>
+											</table>
+										</span>
+									</div>
+								</td>
+							</tr>
+							<tr name="theNextItem">
+								<td>
+									<div name="theExpandablePart" style="padding-left:10px;display:block;">
+										<table border="0" cellpadding="0" cellspacing="0" width="400">
+											<span name="theContent"/>
+										</table>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div name="theLeafNode">
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td>
+									<div name="theTreeCell">
+										<span name="theContent">
+											<table border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td width="20" align="left"><img src="/WebOnSwingDemo/resources/images/tree/empty.gif"></td>
+													<td width="20" name="theCheck">
+														<input type="checkbox"/>
+													</td>
+												<span name="theLabel">
+													<td width="20" align="left">
+														<img name="theImage" src="/WebOnSwingDemo/resources/images/tree/page.gif"/>
+													</td>
+													<td>
+														<span name="theLabel" style="font:menu;font-size:12px;">Leaf Node</span>
+													</td>
+												</span>
+												</tr>
+											</table>
+										</span>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div name="theExpandedNode" style="padding-left:10px;">
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td>
+									<div name="theTreeCell" style="display:block;">
+										<span name="theContent">
+											<table border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td width="20" align="left">
+														<img src="/WebOnSwingDemo/resources/images/tree/minus.gif">
+													</td>
+													<td width="20" name="theCheck">
+														<input type="checkbox" name="theCheckBox" onclick="checkboxPressed= this;"/>
+													</td>
+												<span name="theLabel">
+													<td width="20" align="left">
+														<img name="theImage" src="/WebOnSwingDemo/resources/images/tree/page.gif"/>
+													</td>
+													<td>
+														<span name="theLabel" style="font:menu;font-size:12px;">Expanded Node</span>
+													</td>
+												</span>
+												</tr>
+											</table>
+										</span>
+									</div>
+								</td>
+							</tr>
+							<tr name="theNextItem">
+								<td>
+									<div name="theExpandablePart" style="padding-left:10px;display:block;">
+										<table border="0" cellpadding="0" cellspacing="0">
+											<span name="theContent"/>
+										</table>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div name="theCollapsedNode" style="padding-left:10px;border:0px solid;">
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td>
+									<div name="theTreeCell" style="display:block;">
+										<span name="theContent">
+											<table border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td width="20" align="left">
+														<img src="/WebOnSwingDemo/resources/images/tree/plus.gif">
+													</td>
+													<td width="20" name="theCheck">
+														<input type="checkbox" name="theCheckBox" onclick="checkboxPressed= this;"/>
+													</td>
+												<span name="theLabel">
+													<td width="20" align="left">
+														<img name="theImage" src="/WebOnSwingDemo/resources/images/tree/page.gif"/>
+													</td>
+													<td>
+														<span name="theLabel" style="font:menu;font-size:12px;">Collapsed Node</span>
+													</td>
+												</span>
+												</tr>
+											</table>
+										</span>
+									</div>
+								</td>
+							</tr>
+							<tr name="theNextItem">
+								<td>
+									<div name="theExpandablePart" style="padding-left:10px;display:none;">
+										<table border="0" cellpadding="0" cellspacing="0">
+											<span name="theContent"/>
+										</table>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</span>
+

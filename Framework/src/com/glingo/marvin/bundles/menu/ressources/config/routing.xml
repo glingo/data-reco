@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routing>
+	<route controleur="com.glingo.marvin.bundles.menu.controller.DefaultController" type="annotation" />
+	<route controleur="com.glingo.marvin.bundles.menu.controller.MenuController" name="menu.afficher" path="/afficher" action="afficher"/>
+	<route controleur="com.glingo.marvin.bundles.menu.controller.MenuController" name="menu.test" path="/test" action="test"/>
+</routing>

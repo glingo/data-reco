@@ -1,0 +1,43 @@
+@CHARSET "UTF-8";
+
+/**
+	La section actions est la bande fixée au top ou on positionnera les raccourcis.
+*/
+section#actions{
+	background-color: #282828;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	width: 100%;
+	z-index: 10000;
+	display: table;
+}
+
+section#actions nav{
+	display : table-row;
+}
+
+section#actions figure
+{
+	width:50px;
+	height:75px;
+	display : table-cell;
+}
+
+section#actions figcaption button
+{
+	z-index: 10001;
+}
+
+section#actions figure img
+{
+	width:50px;
+	height:50px;
+}
+
+.unDrop{
+	top: -60px;
+}
+.droped{
+	top: 0;
+}

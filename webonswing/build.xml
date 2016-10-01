@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project basedir="." default="all" name="WebOnSwing" >
+
+  <import file="webonswing/build.xml" />
+  <import file="demo/build.xml" />
+  <import file="petstore/build.xml" />
+  <import file="weblog/build.xml" />
+
+  <target name="all" >
+		 <antcall target="build-wos" />
+		 <antcall target="build-demo" />
+		 <antcall target="build-petstore" />
+		 <antcall target="build-weblog" />
+	</target>
+</project>

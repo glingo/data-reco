@@ -1,0 +1,61 @@
+<html>
+	<head><link rel="stylesheet" type="text/css" href="/styles/WebOnSwing.css"></link><script src="/js/WebOnSwing.js"></script><link rel="stylesheet" type="text/css" href="/styles/Management.css"></link></head>
+	
+	<body>
+		<form method="post" action=".">
+			<span>
+				<table border="0" cellspacing="0" cellpadding="0" bgcolor="#AAAAAA" align="center" width="400" height="400">
+					<tr>
+						<td>
+							<table width="100%" height="100%" border="0" cellspacing="1" cellpadding="5" valign="top" >
+								<tr>
+									<td bgcolor=#D8D8C4 height="5%" align="center">
+										<font face="Verdana" size="-1"><b>Template Manager</b></font>
+									</td>
+								</tr>  
+								<tr>
+									<td bgcolor="#F6F6EB" valign="top">
+										<table name="theTable" border="0" cellspacing="10" cellpadding="0" width="600">
+											<tr>
+												<td align="center" width="200"><font face="Verdana" size="-2">Template name</font></td>
+												<td align="center" width="340"><font face="Verdana" size="-2">Resource path</font></td>
+												<td align="center" width="10">&nbsp;</td>
+											</tr>								
+											<tr>
+												<td colspan="3">
+													<div scrollleft="0" scrolltop="0" style="border: 1px solid;OVERFLOW: scroll; WIDTH: 600; HEIGHT: 500;background-color:#EEEEEE"> 
+														<table width="100%">
+															<tr name="theRow">
+																<td><input type="text" name="theKey" style="width:200" class="bot"/></td>
+																<td><input type="text" name="theValue" style="width:340" class="bot"/></td>
+																<td style="cursor:hand"><img src="/resources/images/bot_delete.gif" name="theDeleteButton" /></td>
+															</tr>
+															<tr>
+																<td id="theButtons" colspan="3">&nbsp;</td>
+															</tr>								
+														</table>
+													</div>
+												</td>
+											</tr>								
+											<tr>
+												<td bgcolor="#F6F6EB" align="left" width="90%" colspan="2" style="cursor:hand">
+													<img src="/resources/images/bot_insertar.gif" name="theAddButton" />
+												</td>
+											</tr>
+											<tr>
+												<td bgcolor="#F6F6EB" align="left" width="10%" colspan="2">
+													<input type="button" name="theSaveButton" value="save" class="bot"/>
+												</td>
+											</tr>
+											<script>document.body.onload= function () {document.getElementById("theButtons").focus();}</script>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</span>
+		</form>
+	</body>
+</html>

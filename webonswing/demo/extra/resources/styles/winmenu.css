@@ -1,0 +1,96 @@
+.JMenuItem  { 	
+	display:block;
+	height:22px;
+	text-decoration:none;
+	color:MenuText;
+	vertical-align:center;
+	cursor:default;
+	font:Menu;
+	border:0;
+	font-size:11px; 
+
+	padding:2px 0px 2px 4px;
+	margin:0px 0px 0px -1px
+} 
+
+.JMenuItemOver  { 	
+	display:block;
+	height:22px;
+	text-decoration:none;
+	color:HighlightText;
+	vertical-align:center;
+	cursor:default;
+	font:Menu;
+	border:0;
+	font-size:11px; 
+
+	padding:2px 0px 2px 4px;
+	margin:0px 0px 0px -1px; 
+
+	background:Highlight
+} 
+
+.JMenuItemText  { 	
+	padding-left:0px;
+	padding-right:0px
+} 
+
+.JCheckBoxMenuItemText  { 	
+	padding-left:7px;
+	padding-right:20px
+} 
+
+.JPopupMenu  { 	
+	color:ButtonText;
+	background:ButtonFace;
+	border-left:2px solid threedhighlight;
+	border-right:2px solid threeddarkshadow;
+	border-top:1px solid threedhighlight;
+	border-bottom:2px solid threeddarkshadow;
+	margin:2px 0px 0px 0px
+} 
+
+.JMenuBar  { 	
+	display:block;
+	text-decoration:none;
+	color:MenuText;
+	vertical-align:center;
+	cursor:default;
+	font:Menu;
+	border:0;
+	background:ButtonFace;
+	font-size:11px; 
+
+	padding:3px; 
+
+	border-left:1px solid ButtonFace;
+	border-right:1px solid ButtonFace;
+	border-top:1px solid ButtonFace;
+	border-bottom:1px solid ButtonFace;
+	margin:0px 0px 0px 0px
+} 
+
+.JMenuBarOver  { 	
+	display:block;
+	text-decoration:none;
+	vertical-align:center;
+	cursor:default;
+	font:Menu;
+	border:0;
+	font-size:11px;
+	padding:3px; 
+
+	color:ButtonText;
+	background:ButtonFace;
+	border-left:1px solid ButtonShadow;
+	border-right:1px solid ButtonHighlight;
+	border-top:1px solid ButtonShadow;
+	border-bottom:1px solid ButtonHighlight
+}
+.JSeparator  { 	
+	border-top:0px solid ButtonShadow;
+	border-bottom:2px inset ButtonHighlight;
+	overflow:hidden;
+	margin:0px 0px 0px 0px;
+	height:0px
+}

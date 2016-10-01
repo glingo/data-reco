@@ -1,0 +1,92 @@
+.JMenuItem  { 	
+	cursor:default;
+	display:block;
+	height:24px;
+	padding:2px;
+	margin:2px; 
+		
+	font-size:11px;
+	font-family:Tahoma, Verdana, Helvetica, Sans-Serfif;
+	text-decoration:none;
+	vertical-align:center; 
+	
+	color:black;
+	border:1px black;
+	width:195
+} 
+
+.JMenuItemOver  { 	
+	cursor:default;
+	display:block;
+	height:24px;
+	padding:2px;
+	margin:2px; 
+
+	font-size:11px;
+	font-family:Tahoma, Verdana, Helvetica, Sans-Serfif;
+	text-decoration:none;
+	vertical-align:center; 
+
+	color:black;
+	border:1px solid black;
+	width:195; 
+
+	background:#B5BED6
+} 
+
+.JMenuItemText  { 	
+	cursor:default
+} 
+
+.JPopupMenu  { 	
+	cursor:default;
+	border:1px solid #808080;
+	margin:2px 0px 0px 0px; 
+	
+	background:white
+} 
+
+.JMenuBar  { 	
+	display:block;
+	text-decoration:none;
+	color:MenuText;
+	vertical-align:center;
+	cursor:default;
+	font:Menu;
+	border:0; 
+
+	background:#B5BED6;
+	font-family:Verdana, Helvetica, Sans-Serif;
+	font-size:11px;
+	padding:3px; 
+	
+	margin:0px 0px 0px 0px
+} 
+
+.JMenuBarOver  { 	
+	display:block;
+	text-decoration:none;
+	color:black;
+	vertical-align:center;
+	cursor:default;
+	font:Menu;
+	border:0; 
+
+	background:#B5BED6;
+	font-family:Verdana, Helvetica, Sans-Serif;
+	font-size:11px; 
+
+	padding:2px; 
+	
+	border-right:1px solid black;
+	border-left:1px solid black;
+	border-bottom:1px solid black;
+	border-top:1px solid black; 
+	
+	margin:0px 0px 0px 0px
+} 
+
+.JSeparator  { 	
+	border-top:1px solid rgb(120,172,255);
+	margin:0px 0px 0px 0px
+}

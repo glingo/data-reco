@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<title>Presentation HTML JavaScript</title>
+	<script src="scripts/jquery-1.9.1.js"></script>
+	
+	<link rel="stylesheet" href="css/Presenteur.css">
+	<link rel="stylesheet" href="css/Header.css">
+	
+	<script src="scripts/Librairie/lux.js"> </script>
+	<script src="scripts/Librairie/Presenteur.js"> </script>
+	<script src="scripts/Librairie/Editeur.js"> </script>
+	<script src="scripts/Tests.js"> </script>
+</head>
+<body>
+	<section id="actions" class ="unDrop">
+		<nav >
+			<figure>
+				<img id="logo1" src="images/Presenteur.png"/>
+				<figcaption>
+					<button id="control_presenteur"> Ouvrir les diapos</button>
+				</figcaption> 
+			</figure>
+			
+			<figure>
+				<img id="logo2"/>
+				<figcaption>
+					<button id="control_undefined"> Une autre action </button>
+				</figcaption>
+			</figure>
+		</nav>
+	</section>
+	
+	<section id="contents">
+		
+	</section>
+</body>
+
+<script>
+
+console.log(lux);
+lux.PRESENTEUR.Editeur.load("json/monmenu.json");
+
+$('#control_presenteur').click(function(){
+	lux.PRESENTEUR.load('json/mapresentation.json');
+});
+
+$('#actions').bind("click",function(){
+	console.log("over");
+	var temp = $(this);
+	function move(obj,from,to){
+		obj.removeClass(from).addClass(to);
+	}
+	if(temp.hasClass("droped")){
+		move(temp,'droped','unDrop');
+	}else{
+		move(temp,'unDrop','droped');
+	}
+});
+</script>
+	
+</html>

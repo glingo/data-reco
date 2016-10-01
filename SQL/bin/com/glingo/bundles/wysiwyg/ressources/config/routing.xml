@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routing prefix="exemple">
+	<route controller="com.glingo.bundles.exemple.controller.DefaultController" type="annotation" />
+	<route controller="com.glingo.bundles.exemple.controller.DefaultController" name="exemple.test" path="/test" action="test" />
+</routing>

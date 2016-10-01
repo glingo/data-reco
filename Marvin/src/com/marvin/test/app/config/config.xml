@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container>
+    <services>
+        <service id="test.service.a" class="com.marvin.test.app.service.TestServiceA">
+            <argument type="string">Service A</argument>
+            <argument type="number">1</argument>
+        </service>
+        <service id="test.service.b" class="com.marvin.test.app.service.TestServiceB">
+            <argument type="service" id="test.service.a"/>
+            <argument type="string">Service B</argument>
+            <argument type="number">2</argument>
+        </service>
+        <service id="test.service.c" class="com.marvin.test.app.service.TestServiceC">
+            <argument type="service" id="test.service.a"/>
+            <argument type="string">Service C</argument>
+            <argument type="number">3</argument>
+            <argument type="collection">
+                <argument type="string">Random string</argument>
+                <argument type="number">42</argument>
+            </argument>
+        </service>
+        
+        <!-- No id service definition should trigger an error
+        
+        <service class="com.marvin.test.app.service.TestServiceA">
+        </service>
+        -->
+    </services>
+</container>

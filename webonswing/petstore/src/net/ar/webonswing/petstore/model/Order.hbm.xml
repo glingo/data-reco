@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"	"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+  <class name="net.ar.webonswing.petstore.model.Order" table="Order_">
+    <id name="id" >
+      <generator class="native" />
+    </id>
+    
+    <component name="address" class="net.ar.webonswing.petstore.model.Address" >
+      <property name="city" length="25" />
+      <property name="country" length="3" />
+      <property name="state" length="3" />
+      <property name="street1" length="50" />
+      <property name="street2" length="50" />
+      <property name="zipcode" length="10" />
+    </component>
+    
+    <component name="creditCard" class="net.ar.webonswing.petstore.model.CreditCard" >
+      <property name="expiryDate" />
+      <property name="number" />
+      <property name="type"  />
+    </component>
+    
+    <many-to-one name="customer" class="net.ar.webonswing.petstore.model.Customer" cascade="none" />
+    <property name="date" />
+    <property name="status" length="10" />
+    
+    <set name="orderItems" lazy="false" cascade="all" order-by="id asc">
+      <key column="order_fk" >
+      </key>
+      <one-to-many class="net.ar.webonswing.petstore.model.OrderItem" />
+    </set>
+    
+  </class>
+</hibernate-mapping>

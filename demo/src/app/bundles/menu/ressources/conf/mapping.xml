@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routing>
+    <route controleur="com.marvin.bundles.menu.controller.DefaultControleur" type="annotation" />
+    <route controleur="com.marvin.bundles.menu.controller.MenuControleur" name="menu.afficher" path="/afficher" action="afficher"/>
+    <route controleur="com.marvin.bundles.menu.controller.MenuControleur" name="menu.test" path="/test" action="test"/>
+</routing>

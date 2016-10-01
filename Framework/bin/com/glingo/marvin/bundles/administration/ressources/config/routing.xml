@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routing>
+	<route name="administration.index" path=".*" controller="com.glingo.marvin.bundles.administration.controller.AdministrationController" action="indexAction" />
+	<route name="administration.test" path="\d" controller="com.glingo.marvin.bundles.administration.controller.AdministrationController" action="testAction" />
+	<route name="administration.template" path="template" controller="com.glingo.marvin.bundles.administration.controller.AdministrationController" action="templateAction" />
+</routing>

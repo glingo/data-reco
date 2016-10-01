@@ -1,0 +1,12 @@
+{
+	"presentation" : "javascript",
+	
+	"ordre" : 3,
+	
+	"titre" : "Ma troisieme diapo est en ligne",
+	
+	"section" : {
+					"section" : ["<header>","le header de la section","</header>",
+								 ""]
+				}
+}

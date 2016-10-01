@@ -1,0 +1,12 @@
+{
+	"presentation" : "javascript",
+	
+	"ordre" : 6,
+	
+	"titre" : "Ma sixieme diapo est en ligne",
+	
+	"section" : 
+		{
+			"text" :	"Ceci est le corps de la section"
+		}
+}

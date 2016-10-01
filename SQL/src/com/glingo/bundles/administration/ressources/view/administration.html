@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> 		<![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9"> 				<![endif]-->
+<!--[if gt IE 8]><!-->
+
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Administration Bundle</title>
+	<link rel="stylesheet" href="com/glingo/bundles/administration/ressources/view/css/bootstrap.css" type="text/css"/>
+	<link rel="stylesheet" href="com/glingo/bundles/administration/ressources/view/css/bootstrap-theme.css" type="text/css"/>
+	<link rel="shortcut icon" href="img/icone.ico"/>
+</head>
+
+
+<body>
+
+	<div class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				<a class="navbar-brand" href=".">
+					Cellule Qualit&eacute;
+				</a>
+            </div>
+			<div class="navbar-collapse collapse ">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Etats des projets<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li>
+								<a href="?Pg=global">GLOBAL</a>
+							</li>
+							<li>
+								<a href="?Pg=appizy1">MODIF</a>
+							</li>
+							<li>
+								<a href="?Pg=appizy-affich">AFFICHAGE</a>
+							</li>
+						</ul>
+					</li>
+					<li class="divider"></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Suivi des anomalies <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li>
+								<a href="?Pg=anomalies-spirits">SPIRITS</a>
+							</li>
+							<li>
+								<a href="?Pg=anomalies-omsar">OMSAR</a>
+							</li>
+							<li>
+								<a href="?Pg=repertoire-menu">SIAS</a>
+							</li>
+							<li>
+								<a href="?Pg=mutation-menu">GLOBE</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<span class="nav-text pull-right"> <?php echo date("d F Y"); ?> </span>
+			</div>
+        </div>
+    </div>
+    
+		
+    
+	<section id="main-container" class="container-fluid">
+    
+		<h1> Bienvenue dans le bundle d'administration </h1>
+		<h2> Bonjour {{ name }}</h2>
+		<h3> URI : {{ request.uri }}</h3>
+		<div class='row'>
+			<div class='col-lg-4'>
+				<ul class='list-group'>
+					<li class='list-group-item alert alert-success'> Controller : {{ controller }}. </li>
+					<li class='list-group-item alert alert-success'> User : {{ user }}. </li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<script src="com/glingo/bundles/administration/ressources/view/js/jquery.min.js"> </script>
+	<script src="com/glingo/bundles/administration/ressources/view/js/bootstrap.min.js"> </script>
+	<script src="com/glingo/bundles/administration/ressources/view/js/main.js"> </script>
+	
+</body>
